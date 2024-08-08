@@ -1,0 +1,49 @@
+header{
+  display: flex;
+  margin-left: 5vw;
+  margin-top: 3vw;
+  gap: 5vw;
+}
+
+p{
+  margin-top: 0vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.login{
+    margin-left: 10vw;
+  display: flex;
+  flex-direction: column; 
+}
+
+.velho{
+  width: 45vw;
+}
+
+input{
+  border-radius: 0.5vh;
+  width: 15 vw;
+  height: 5vh;
+  border-color: #15566A;
+  border-width: 0.2vh;
+}
+
+h1{
+  color:  #15566A;;
+}
+
+.introducao{
+  color:  #15566A;;
+}
+
+.logar{
+    background-color: #1F9599;
+    color: aliceblue;
+    width: 30vh;
+
+}
