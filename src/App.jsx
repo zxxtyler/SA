@@ -12,12 +12,12 @@ function App() {
   return (
     <>
       <header> 
-      <img src={imagem1}/>
+      <img className='logo' src={imagem1}/>
         <a href="#">Home</a>
         <a href="#">Como funciona?</a>
         <a href="#">Benefícios</a>
         <a href="#">Sobre nós</a>
-        <p>Ainda não tem uma conta? <a href="//">Clique aqui</a></p>
+        <p className='separado'>Ainda não tem uma conta? <a href="//">Clique aqui</a></p>
       </header>
 
       <div className='container'>

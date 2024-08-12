@@ -5,6 +5,19 @@ header{
   gap: 5vw;
 }
 
+.logo{
+  width: 4vw;
+  margin-top: -1vw;
+}
+
+.separado{
+  margin-left: 15vw;
+}
+
+header a, header a:visited, header a:link{
+  color: #15566A;
+}
+
 p{
   margin-top: 0vh;
 }
@@ -29,6 +42,7 @@ input{
   border-radius: 0.5vh;
   width: 15 vw;
   height: 5vh;
+  border: solid;
   border-color: #15566A;
   border-width: 0.2vh;
 }
