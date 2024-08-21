@@ -1,8 +1,10 @@
+import React from 'react';
 import { useState } from 'react';
 import imagem1 from './img/logo.svg';
 import imagem2 from './img/idoso.svg';
 import './App.css';
-import React from 'react';
+import login from './login';
+import { Link } from 'react-router-dom';
 
 function Cadastro() {
   const [count, setCount] = useState(0)
@@ -10,7 +12,15 @@ function Cadastro() {
   return (
     <>
 
-    
+<header> 
+      <img className='logo' src={imagem1}/>
+        <a href="#">Home</a>
+        <a href="#">Como funciona?</a>
+        <a href="#">Benefícios</a>
+        <a href="#">Sobre nós</a>
+        <p className='separado'> Já tem uma conta? <Link to="/login" >CLique aqui</Link></p>
+      </header>
+
       <header> 
       <div className='container'>
         <img className='velho' src={imagem2}/> 
