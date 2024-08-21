@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import imagem1 from './img/logo.svg';
-import imagem2 from './img/idoso.svg';
+import imagem3 from './img/velho2.svg';
 import './App.css';
 import login from './login';
 import { Link } from 'react-router-dom';
@@ -23,7 +23,7 @@ function Cadastro() {
 
       <header> 
       <div className='container'>
-        <img className='velho' src={imagem2}/> 
+        <img className='velho' src={imagem3}/> 
         <div className='login'>
         <h1>Cadastro</h1>
         <p className='introducao'>Bom te ver! Preencha as informações para se cadastrar em sua conta!</p>
@@ -32,6 +32,8 @@ function Cadastro() {
         <input type="text" placeholder='data de nascimento'/>
         <br />
         <input type="text" placeholder='telefone'/>
+        <br />
+        <input type="text" placeholder='Biografia'/>
         <br />
         <center>
         <button className='logar'>Cadastrar</button>
