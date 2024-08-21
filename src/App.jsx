@@ -1,52 +1,22 @@
-import { useState } from 'react'
-import imagem1 from './img/logo.svg'
-import imagem2 from './img/idoso.svg'
-import './App.css'
-import React from 'react'
-
-
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Cadastro from './cadastro';
+import Login from './login';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <header> 
-      <img className='logo' src={imagem1}/>
-        <a href="#">Home</a>
-        <a href="#">Como funciona?</a>
-        <a href="#">Benefícios</a>
-        <a href="#">Sobre nós</a>
-        <p className='separado'>Ainda não tem uma conta? <a href="//">Clique aqui</a></p>
-      </header>
+     <Router>
+        <Routes>
+          <Route path='/cadastro' element={<Cadastro/>} />
 
-      <div className='container'>
-        <img className='velho' src={imagem2}/> 
-        <div className='login'>
-        <h1>Login</h1>
-        <p className='introducao'>Bom te ver novamente! Preencha as informações para entrar em sua conta!</p>
-        <input type="text" placeholder='nome'/> 
-        <br />
-        <input type="text" placeholder='email'/>
-        <br />
-        <input type="text" placeholder='senha'/>
-        <br />
-        <center>
-        <button className='logar'>Logar</button>
-        </center> 
-        <br />
-        <center>
-        <p>Ou entre por outro meio:</p>
-        </center>      
-      </div>
-      </div>
-      
-
-      
-      
-     
+          <Route path='/login' element={<Login/>} />
+        </Routes>
+     </Router>
+    
     </>
-  )
+  );
 }
 
-export default App
+export default App;
