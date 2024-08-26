@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import imagem1 from './img/logo.svg';
 import imagem3 from './img/velho2.svg';
-import './App.css';
+import './css/cadastrologin.css';
 import login from './login';
 import { Link } from 'react-router-dom';
 
