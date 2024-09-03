@@ -1,3 +1,4 @@
+
 *{
   padding: 0px;
   margin: 0px;
@@ -9,6 +10,7 @@ header{
   margin-left: 5vw;
   margin-top: 3vw;
   gap: 5vw;
+  align-items: center;
 }
 
 .logo{
@@ -29,42 +31,113 @@ header a, header a:visited, header a:link{
   border-color: #1F9599;
   color: #1F9599;
   margin-left: 30vw;
+  transition: 0.5s;
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  
+  cursor: pointer;
+}
+
+.jatemconta:hover{
+  background-color: #1F9599;
+  color: #ffffff;
+}
+
+.divimagem{
+  display: flex;
+  margin-bottom: 5vh;
+}
+
+.lado{
+  margin-left: 5vw;
+  margin-top: 10vh;
+  width: 50vw;
 }
 
 .tituloveio{
   margin-top: 2vw;
-  width: 60vw;
-  height: 11vw;
+  font-size: 2.4rem;
 }
 
 .paragrafo{
   color: #15566A;
-  width: 40vw;
+  width: 65%;
   font-size: 20px;
+  margin-bottom: 10vh;
+}
+
+.botaos{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.buttoninicio{
+  background-color: #ffffff;
+  border-color: #1F9599;
+  color: #1F9599;
+  transition: 0.5s;
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  
+  cursor: pointer;
+}
+
+.buttoninicio:hover{
+  background-color: #1F9599;
+  color: #ffffff;
+}
+
+.buttoninicio:first-child{
+  background-color: #1F9599;
+  color: #ffffff;
+}
+
+.buttoninicio:first-child:hover{
+  background-color: #ffffff;
+  border-color: #1F9599;
+  color: #1F9599;
 }
 
 .idoso3{
   width: 40vw;
-  margin-left: 53vw;
-  margin-top: -43vh;
 }
 
-.lado{
-  margin-left: 10vw;
-}
 
 .fundo{
   background-color: rgb(224, 224, 224);
-  height: 70vh;
+  height: 100vh;
 }
 
-h2{
+.blocos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: 0 10vw;
+  gap: 4vw;
+}
+
+h2, .texto{
   color:  #15566A;
 }
 
-.texto{
- width: 30vw;
+.segundotitulo{
+  padding-top: 10vh;
+  font-size: 2rem;
 }
+
+.blocos h2{
+  margin-top: 3vh;
+}
+
 
 .bloco1{
   display: flex;
@@ -78,8 +151,6 @@ h2{
   gap: 0.5vw;
 }
 
-.blocos{
-  display: flex;
-  justify-content: space-around;
- 
+.beneficios{
+  height: 100vh;
 }
