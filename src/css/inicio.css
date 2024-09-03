@@ -1,11 +1,15 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 header{
   display: flex;
   margin-left: 5vw;
   margin-top: 3vw;
   gap: 5vw;
 }
-
-
 
 .logo{
   width: 4vw;
@@ -28,7 +32,9 @@ header a, header a:visited, header a:link{
 }
 
 .tituloveio{
+  margin-top: 2vw;
   width: 60vw;
+  height: 11vw;
 }
 
 .paragrafo{
@@ -40,12 +46,40 @@ header a, header a:visited, header a:link{
 .idoso3{
   width: 40vw;
   margin-left: 53vw;
-  margin-top: -48vh;
+  margin-top: -43vh;
 }
 
 .lado{
   margin-left: 10vw;
 }
 
+.fundo{
+  background-color: rgb(224, 224, 224);
+  height: 70vh;
+}
 
+h2{
+  color:  #15566A;
+}
 
+.texto{
+ width: 30vw;
+}
+
+.bloco1{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.bloco2{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.blocos{
+  display: flex;
+  justify-content: space-around;
+ 
+}
