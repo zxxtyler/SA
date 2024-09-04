@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  header{
+    display: flex;
+    margin-left: 5vw;
+    margin-top: 3vw;
+    gap: 5vw;
+    align-items: center;
+  }
+  
+  .logo{
+    width: 4vw;
+    margin-top: -1vw;
+  }
+
+  

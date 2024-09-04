@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+    .tudo{
+    background-color: #fff8f3;
+  }
+
+.nome{
+    display: block;
+}
+
+.tituloedite{
+    font-size: 10vh;
+    padding-bottom: 3vh;
+}
+
+
+.velha{
+    display: flex;
+    
+}

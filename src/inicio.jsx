@@ -27,8 +27,8 @@ function inicio() {
           <p className='paragrafo'>Seja bem-vindo ao lugar onde cuidado e dedicação se encontram para proporcionar conforto e qualidade de vida aos idosos.
             Cadastre-se para começar já!</p>
           <div className='botaos' >
-            <Link className="buttoninicio" to="/" >Sou idoso(a)</Link>
-            <Link className="buttoninicio" to="/" >Sou cuidador(a)</Link>
+            <Link className="buttoninicio" to="/cadastro" >Sou idoso(a)</Link>
+            <Link className="buttoninicio" to="/cadastrocuidador" >Sou cuidador(a)</Link>
           </div>
         </div>
         <img className='idoso3' src={idoso3} />

@@ -5,6 +5,7 @@ import imagem2 from './img/idoso.svg';
 import './css/cadastrologin.css';
 import Cadastro from './cadastro';
 import { Link } from 'react-router-dom';
+import './css/login.css';
 
 
 function Login() {

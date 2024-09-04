@@ -3,6 +3,7 @@ header{
   margin-left: 5vw;
   margin-top: 3vw;
   gap: 5vw;
+  align-items: center;
 }
 
 .logo{
@@ -10,12 +11,8 @@ header{
   margin-top: -1vw;
 }
 
-.separado{
-  margin-left: 15vw;
-}
-
 header a, header a:visited, header a:link{
-  color: #15566A;
+  color: #1f9599;
 }
 
 p{
@@ -26,22 +23,27 @@ p{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 .login{
-    margin-left: 10vw;
+  margin-left: 18vw;
   display: flex;
   flex-direction: column; 
+  width: 60vh;
+  margin-top: 2vh;
+  margin-left: 15vw;
 }
 
 .velho{
-  width: 45vw;
+  width: 41vw;
+  margin-left: 5vw;
 }
 
 input{
-  border-radius: 0.5vh;
-  width: 15 vw;
-  height: 5vh;
+  border-radius: 1.3vh;
+  width: 30vw;
+  height: 6vh;
   border: solid;
   border-color: #15566A;
   border-width: 0.2vh;
@@ -49,15 +51,49 @@ input{
 
 h1{
   color:  #15566A;
+  font-weight: 500;
 }
 
 .introducao{
   color:  #15566A;
+  margin-bottom: 1.5vw;
 }
 
 .logar{
     background-color: #1F9599;
     color: aliceblue;
     width: 30vh;
+    box-shadow: 5px 5px 5px  rgb(211, 211, 211);
 
+}
+
+.fotoperfil{
+  width: 20vh;
+}
+
+.inputpequeno{
+  width: 16vw;
+}
+
+.doisinputs{
+  display: flex;
+}
+
+.coluna{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+}
+
+.inputmaior{
+  height: 20vh;
+  width: 30vw;
+  border-radius: 1.3vh;
+  border-color: #15566A;
+  border-width: 0.1vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.certif{
+  margin-bottom: 2vh;
 }
