@@ -21,6 +21,7 @@ function perfil() {
             <h2>Jertrudes(73)</h2>
             <img className='estrela' src={estrela}/><br/>
 
+            <div className='espaco'>
             <label>Biografia
                 <input className='nome' type="text"/>
             </label>
@@ -40,6 +41,7 @@ function perfil() {
                     <label>Número de telefone
                         <input className='nome' type="text"/>
                     </label>
+                    </div>
         </div>
         </div>
 

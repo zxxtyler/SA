@@ -13,6 +13,7 @@
 
 .nome{
     display: block;
+    background-color: #fff8f3;
 }
 
 .tituloedite{
@@ -54,3 +55,9 @@
   object-fit: cover; 
 }
 
+
+.espaco{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
