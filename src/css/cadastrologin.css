@@ -82,7 +82,7 @@ h1{
 .coluna{
   display: flex;
   flex-direction: column;
-  margin-left: 5vw;
+  margin-left: 4vw;
 }
 
 .inputmaior{

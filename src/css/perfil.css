@@ -4,8 +4,11 @@
     box-sizing: border-box;
   }
   
-    .tudo{
+  .tudo{
     background-color: #fff8f3;
+    display: flex; 
+    flex-direction: row;
+    
   }
 
 .nome{
@@ -13,12 +16,41 @@
 }
 
 .tituloedite{
-    font-size: 10vh;
+    font-size: 6vh;
     padding-bottom: 3vh;
 }
 
 
-.velha{
-    display: flex;
-    
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
+
+.estrela{
+  width: 20vh;
+  padding-bottom: 2vh;
+}
+
+.seta{
+  width: 5vh;
+}
+
+.bloco11{
+  padding-left: 12vw;
+  padding-top: 8vh;
+}
+
+.velha{
+  display: flex;
+  height: 100vh;
+}
+
+.imagemvelha{
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  object-fit: cover; 
+}
+

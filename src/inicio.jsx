@@ -15,8 +15,8 @@ function inicio() {
     <>
       <header className='cabecainicio'>
         <img className='logo' src={imagem1} />
-        <a href="#">Como funciona?</a>
-        <a href="#">Benefícios</a>
+        <a href="#teste">Como funciona?</a>
+        <a href="#bene">Benefícios</a>
         <a href="#">Sobre nós</a>
         <Link className='jatemconta' to="/login">Já tenho uma conta</Link>
       </header>
@@ -36,9 +36,12 @@ function inicio() {
       </div>
 
       <section className='fundo'>
+
+        <section id='teste'>
         <center>
           <h2 className='segundotitulo'>Como funciona?</h2>
         </center>
+        
 
         <div className='blocos'>
           <div>
@@ -60,13 +63,14 @@ function inicio() {
             <h2>Avaliações e feedback</h2>
             <p className='texto'>Após cada interação entre o idoso e o cuidador, ambos têm a oportunidade de deixar avaliações e feedbacks. Isso ajuda a manter a qualidade do serviço e a construir uma comunidade de confiança dentro da nossa plataforma.</p>
           </div>
+          
 
           </div>
-        
+          </section>
 
       </section>
 
-      <section className='beneficios'>
+      <section id='bene' className='beneficios'>
       <center>
           <h2 className='segundotitulo'>Benefícios</h2>
         </center>
@@ -90,7 +94,16 @@ function inicio() {
           </div>
       </section>
 
-
+    
+    <section id='sobre'>
+      <div className='fundosobre'>
+      <center>
+      <h1>Fale conosco</h1>
+      <p className='sobretexto'>pipipipipi_ipipip@gmail.com</p>
+      <p className='sobretexto'>(48)0000-0000</p>
+      </center>
+      </div>
+    </section>
 
 
 

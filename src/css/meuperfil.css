@@ -1,0 +1,16 @@
+.tudo2{
+    background: linear-gradient(to bottom, #1F9599, #ffffff);
+    height: 50vh;
+}
+
+.textoperfil{
+    color: white;
+    padding-top: 1vh;
+    padding-left: 1vw;
+}
+
+.nhe{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3vh;
+}

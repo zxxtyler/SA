@@ -114,7 +114,7 @@ header a, header a:visited, header a:link{
 
 .fundo{
   background-color: rgb(224, 224, 224);
-  height: 100vh;
+  height: 70vh;
 }
 
 .blocos{
@@ -152,5 +152,15 @@ h2, .texto{
 }
 
 .beneficios{
-  height: 100vh;
+  height: 75vh;
+}
+
+.fundosobre{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: rgb(224, 224, 224);
+}
+
+.sobretexto{
+  color:  #15566A;
 }
