@@ -97,3 +97,7 @@ h1{
 .certif{
   margin-bottom: 2vh;
 }
+
+html{
+	scroll-behavior: smooth;
+}

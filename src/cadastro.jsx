@@ -15,11 +15,11 @@ function Cadastro() {
 
 <header> 
       <img className='logo' src={imagem1}/>
-        <a href="#">Home</a>
+        <p><Link to="/">Home</Link></p>
         <a href="#">Como funciona?</a>
         <a href="#">Benefícios</a>
         <a href="#">Sobre nós</a>
-        <p className='separado'> Já tem uma conta? <Link to="/login" >CLique aqui</Link></p>
+        <p className='separado'> Já tem uma conta? <Link to="/login" >Clique aqui</Link></p>
       </header>
 
        

@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import imagem1 from './img/logo.svg';
 import imagem2 from './img/idoso.svg';
+import imagem3 from './img/google.svg';
 import './css/cadastrologin.css';
 import Cadastro from './cadastro';
 import { Link } from 'react-router-dom';
@@ -15,11 +16,11 @@ function Login() {
     <>
       <header> 
       <img className='logo' src={imagem1}/>
-        <a href="#">Home</a>
+       <p><Link to="/">Home</Link></p>
         <a href="#">Como funciona?</a>
         <a href="#">Benefícios</a>
         <a href="#">Sobre nós</a>
-        <p className='separado'> Ainda não tem uma conta? <Link to="/cadastro" >CLique aqui</Link></p>
+        <p className='separado'> Ainda não tem uma conta? <Link to="/cadastro" >Clique aqui</Link></p>
       </header>
 
       <div className='container'>
@@ -29,8 +30,6 @@ function Login() {
         <p className='introducao'>Bom te ver novamente! Preencha as informações para entrar em sua conta!</p>
         <input type="text" placeholder='nome'/> 
         <br />
-        <input type="text" placeholder='email'/>
-        <br />
         <input type="text" placeholder='senha'/>
         <br />
         <center>
@@ -39,6 +38,7 @@ function Login() {
         <br />
         <center>
         <p>Ou entre por outro meio:</p>
+        <img className='google' src={imagem3}/>
         </center>      
       </div>
       </div>

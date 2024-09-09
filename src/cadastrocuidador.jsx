@@ -15,7 +15,7 @@ function Cadastrocuidador() {
 
 <header> 
       <img className='logo' src={imagem1}/>
-        <a href="#">Home</a>
+        <p><Link to="/">Home</Link></p>
         <a href="#">Como funciona?</a>
         <a href="#">Benefícios</a>
         <a href="#">Sobre nós</a>

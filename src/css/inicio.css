@@ -171,11 +171,17 @@ h2, .texto{
 }
 
 .sobrenos{
-  padding-top: 3vh;
+  padding-top: 13vh;
   width: 80vh;
   color:  #15566A;
 }
 
 .idoso4{
-  width: 40vh;
+  width: 100vh;
+}
+
+.colunasobre{
+  display: flex;
+  margin-left: 20vw;
+  padding-top: 3vh;
 }

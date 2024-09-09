@@ -100,9 +100,11 @@ function inicio() {
       <div className='fundosobre'>
       <center>
       <h1>Sobre nós</h1>
+          <div className='colunasobre'>
       <p className='sobrenos'>Na CarefulPeople, dedicamo-nos a oferecer cuidados excepcionais para idosos com respeito e carinho. Desde ínicio de 2024, nossa equipe comprometida e qualificada trabalha para garantir um ambiente seguro e acolhedor, atendendo às necessidades individuais de cada pessoa.
           Nosso objetivo é melhorar a qualidade de vida dos nossos clientes, promovendo autonomia e felicidade através de serviços personalizados e atenção cuidadosa. Para nós, cada idoso é único e merece um cuidado que respeite sua dignidade.</p>
           <img className='idoso4' src={idoso4}/>
+          </div>
       </center>
       </div>
     </section>
