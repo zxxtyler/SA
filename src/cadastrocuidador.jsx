@@ -28,7 +28,7 @@ function Cadastrocuidador() {
         <div className='login'>
         <h1 className='cadastro'>Cadastro</h1>
         <p className='introducao'>Bom te ver! Preencha as informações para se cadastrar em sua conta!</p>
-        <input className='inputmedio' type="text" placeholder='nome completo'/> 
+        <input className='inputmedio' type="text" placeholder='nome de usuário'/> 
         <br />
         <input className='certif' type="text" placeholder='certificado' />
 

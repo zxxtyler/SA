@@ -28,7 +28,7 @@ function Login() {
         <div className='login'>
         <h1>Login</h1>
         <p className='introducao'>Bom te ver novamente! Preencha as informações para entrar em sua conta!</p>
-        <input type="text" placeholder='nome'/> 
+        <input type="text" placeholder='nome de usuário'/> 
         <br />
         <input type="text" placeholder='senha'/>
         <br />
