@@ -2,12 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './css/meuperfil.css';
-import seta2 from './img/seta2.svg';
-import estrela from './img/estrela.svg';
-import aniversario from './img/aniversario.svg';
-import email from './img/email.svg';
-import foto from './img/foto.svg';
-import certificado from './img/certificado.svg';
+import seta2 from '../public/icons/seta2.svg';
+import estrela from '../public/icons/estrela.svg';
+import aniversario from '../public/icons/aniversario.svg';
+import email from '../public/icons/email.svg';
+import foto from '../public/icons/foto.svg';
+import certificado from '../public/icons/certificado.svg';
 import perfil from './perfil';
 
 function meuperfil() {

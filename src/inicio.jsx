@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import imagem1 from './img/logo.svg';
+import imagem1 from '../public/img/logo.png';
 import './css/inicio.css';
-import idoso3 from './img/idoso3.svg';
-import idoso4 from './img/idoso4.svg';
+import idoso3 from '../public/img/velho3.png';
+// import idoso4 from '../public/img/velho3.png';
 import Login from './login';
 
 import { Link } from 'react-router-dom';
@@ -37,13 +37,11 @@ function inicio() {
       </div>
 
       <section className='fundo'>
-
         <section id='teste'>
         <center>
           <h2 className='segundotitulo'>Como funciona?</h2>
         </center>
-        
-
+      
         <div className='blocos'>
           <div>
             <h2>Cadastro Simples</h2>
@@ -100,11 +98,11 @@ function inicio() {
       <div className='fundosobre'>
       <center>
       <h1>Sobre nós</h1>
-          <div className='colunasobre'>
+         
       <p className='sobrenos'>Na CarefulPeople, dedicamo-nos a oferecer cuidados excepcionais para idosos com respeito e carinho. Desde ínicio de 2024, nossa equipe comprometida e qualificada trabalha para garantir um ambiente seguro e acolhedor, atendendo às necessidades individuais de cada pessoa.
           Nosso objetivo é melhorar a qualidade de vida dos nossos clientes, promovendo autonomia e felicidade através de serviços personalizados e atenção cuidadosa. Para nós, cada idoso é único e merece um cuidado que respeite sua dignidade.</p>
-          <img className='idoso4' src={idoso4}/>
-          </div>
+          {/* <img className='idoso4' src={idoso4}/> */}
+          
       </center>
       </div>
     </section>

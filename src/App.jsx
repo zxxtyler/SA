@@ -7,6 +7,7 @@ import Inicio from './inicio';
 import Cadastrocuidador from './cadastrocuidador';
 import Perfil from './perfil';
 import Meuperfil from './meuperfil';
+import Home from './home';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path='/login' element={<Login/>} />
 
           <Route path='/perfil' element={<Perfil/>} />
+
+          <Route path='/home' element={<Home/>} />
 
           <Route path='/meuperfil' element={<Meuperfil/>} />
 

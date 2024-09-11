@@ -1,0 +1,72 @@
+[
+    {
+      "nome_completo": "José",
+      "imagem_perfil": "emoticon.jpg",
+      "idade": 78,
+      "estrelas": 4.5,
+      "localizacao": {
+        "cidade": "São Paulo",
+        "estado": "SP"
+      },
+      "descricao_necessidades": "Precisa de ajuda para mobilidade e acompanhamento médico regular.",
+      "telefone": "+55 11 98765-4321",
+      "data_aniversario": "1946-03-15",
+      "certificado": true
+    },
+    {
+      "nome_completo": "Heloisa",
+      "imagem_perfil": "crianca.jpg",
+      "idade": 82,
+      "estrelas": 4.0,
+      "localizacao": {
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      },
+      "descricao_necessidades": "Necessita de cuidados com alimentação e supervisão diária.",
+      "telefone": "+55 21 97654-3210",
+      "data_aniversario": "1942-07-22",
+      "certificado": false
+    },
+    {
+      "nome_completo": "Maria",
+      "imagem_perfil": "flor.jpg",
+      "idade": 74,
+      "estrelas": 3.5,
+      "localizacao": {
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      },
+      "descricao_necessidades": "Precisa de suporte para atividades diárias e monitoramento de saúde.",
+      "telefone": "+55 31 91234-5678",
+      "data_aniversario": "1950-11-05",
+      "certificado": true
+    },
+    {
+      "nome_completo": "Augusto",
+      "imagem_perfil": "velhocaminhao.jpg",
+      "idade": 79,
+      "estrelas": 5.0,
+      "localizacao": {
+        "cidade": "Curitiba",
+        "estado": "PR"
+      },
+      "descricao_necessidades": "Requer ajuda com a mobilidade e companhia constante.",
+      "telefone": "+55 41 99876-5432",
+      "data_aniversario": "1945-02-10",
+      "certificado": true
+    },
+    {
+      "nome_completo": "Charles",
+      "imagem_perfil": "velhooculos.jpg",
+      "idade": 85,
+      "estrelas": 3.0,
+      "localizacao": {
+        "cidade": "Fortaleza",
+        "estado": "CE"
+      },
+      "descricao_necessidades": "Necessita de assistência para a realização de tarefas diárias e acompanhamento médico.",
+      "telefone": "+55 85 92345-6789",
+      "data_aniversario": "1939-08-30",
+      "certificado": false
+    }
+  ]

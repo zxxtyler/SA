@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import './css/perfil.css';
-import seta from './img/seta.svg';
-import estrela from './img/estrela.svg';
-import velha from './img/velha.svg';
+import seta from '../public/icons/seta.svg';
+import estrela from '../public/icons/estrela.svg';
+import velha from '../public/img/velhapadrao.png';
 import { Link } from 'react-router-dom';
 
 function perfil() {

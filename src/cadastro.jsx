@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import imagem1 from './img/logo.svg';
-import imagem3 from './img/velho2.svg';
-import imagem4 from './img/fotoperfil.svg';
+import imagem1 from '../public/img/logo.png';
+import imagem3 from '../public/img/velho2.png';
+import imagem4 from '../public/icons/fotoperfil.svg';
 import './css/cadastrologin.css';
 import login from './login';
 import { Link } from 'react-router-dom';
