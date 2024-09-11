@@ -14,20 +14,22 @@ function Home() {
 
 
     return (
-        <div style={{backgroundColor:'#FFF8F3'}}>
+        <div className="fundohome">
 
             <header>
             <img className='logo' src={imagem1}/>
                 <p className="carefulpeople">Careful people</p>
-                <img className="casa" src={casa}/>
-                <img className="coracao" src={coracao}/>
-                <img className="perfilpequeno" src={perfilpequeno}/>
+                    
+                    <img className="casa" src={casa}/>
+                    <img className="coracao" src={coracao}/>
+                    <img className="perfilpequeno" src={perfilpequeno}/>
+                    
             </header>
 
             <main>
                     <ImageSlider data={Velhos}/>
                 <div>
-                    <img src={print} className="print"/>
+                    <img  className="print" src={print}/>
                 </div>
             </main>
 
