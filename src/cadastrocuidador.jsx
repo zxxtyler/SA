@@ -45,7 +45,7 @@ function Cadastrocuidador() {
         <textarea className='inputmaior' placeholder='Biografia'></textarea>
         <br />
         <center>
-        <button className='logar'>Cadastrar</button>
+        <button className='logar'><Link className='logarbotao' to="/home">Cadastrar</Link></button>
         </center> 
            
       </div>

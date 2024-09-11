@@ -18,7 +18,7 @@ function Home() {
 
             <header>
             <img className='logo' src={imagem1}/>
-                <p>Careful people</p>
+                <p className="carefulpeople">Careful people</p>
                 <img className="casa" src={casa}/>
                 <img className="coracao" src={coracao}/>
                 <img className="perfilpequeno" src={perfilpequeno}/>

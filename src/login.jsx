@@ -33,7 +33,7 @@ function Login() {
         <input type="text" placeholder='senha'/>
         <br />
         <center>
-        <button className='logar'>Logar</button>
+        <button className='logar'><Link className='logarbotao' to="/home">Logar</Link></button>
         </center> 
         <br />
         <center>
