@@ -27,6 +27,7 @@ main{
     width: 200px;
     display: flex;
     gap: 3.5vh;
+   
 }
 
 .casa, .coracao, .perfilpequeno{

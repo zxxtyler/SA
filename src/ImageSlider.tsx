@@ -15,7 +15,7 @@ const ImageSlider = ({ data }) => {
   return (
     <div className="image-slider">
       <div className="slider-image-container">
-        {/* Construct the image path dynamically */}
+        
         <img 
           src={`../public/velhos/${data[currentIndex].imagem_perfil}`} 
           alt={data[currentIndex].nome_completo} 
