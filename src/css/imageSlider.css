@@ -1,9 +1,10 @@
 .image-slider {
     position: relative;
     width: 80%;
-    width: 30vw;
+    width: 40vw;
     margin: auto;
     overflow: hidden;
+  
   }
   
   .slider-image-container {
@@ -13,8 +14,8 @@
   .slider-image-container img {
     display: block;
     border-radius: 20px;
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 38vw;
     object-fit: cover;
   }
   

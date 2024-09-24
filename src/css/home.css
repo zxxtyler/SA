@@ -3,17 +3,43 @@ main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    margin-top: 3rem;
 }
+
+.headerhome{
+    margin-top: -0.1vw;
+}
+
 
 
 .print{
     width: 25vw;
-    margin-bottom: 20vw;
 }
 
 .fundohome{
     background-color: #FFF8F3;
 }
 
+.mematei{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 6vh;
+    width: 200px;
+    display: flex;
+    gap: 3.5vh;
+}
 
+.casa, .coracao, .perfilpequeno{
+    width: 5vh;
+}
+
+.logohome{
+    width: 9vh;
+    padding-bottom: 1.5vh;
+}
+
+
+.carefulpeople{
+color: #268cac;
+font-weight: 700;
+}

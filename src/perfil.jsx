@@ -15,7 +15,9 @@ function perfil() {
       
         
         <div className='formulario'>
+            <Link to="/meuperfil">
             <img className='seta' src={seta}/>
+            </Link>
             <div className='bloco11'>
             <h1 className='tituloedite'>Edite seu perfil.</h1>
             <h2>Jertrudes(73)</h2>

@@ -18,7 +18,9 @@ function meuperfil() {
 
       <div className='tudo2'>
         <div className='nhe'>
+          <Link to="/home">
           <img src={seta2}/>
+          </Link>
           <h1 className='textoperfil'>Perfil</h1>
         </div>
      
