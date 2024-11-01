@@ -1,0 +1,35 @@
+#PARA UTILIZAR ESSES ENDPOINTS É NECESSÁRIO INSTALAR A EXTENSÃO DO VSCODE "REST CLIENT"
+###
+
+GET http://localhost:3333/velhos
+
+###
+
+POST http://localhost:3333/velhos
+Content-Type: application/json
+
+{
+    "nome": "josé",
+    "nascimento": "18/08/1955",
+    "telefone": "9999-9999",
+    "fotoperfil": "a",
+    "biografia": "legal"
+  
+}
+
+###
+
+PUT http://localhost:3333/velhos/470a048c-3634-4d5d-b6c3-1d6acbb89eb5
+Content-Type: application/json
+
+{
+  "nome": "josiane",
+    "nascimento": "18/08/1955",
+    "telefone": "9999-9999",
+    "fotoperfil": "a",
+    "biografia": "legal"
+}
+
+###
+
+DELETE http://localhost:3333/velhos/470a048c-3634-4d5d-b6c3-1d6acbb89eb5
