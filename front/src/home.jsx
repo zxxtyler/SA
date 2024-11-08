@@ -6,7 +6,6 @@ import coracao from '../public/icons/coracao.svg';
 import perfilpequeno from '../public/icons/perfilpequeno.svg';
 import Velhos from "./data/velhos.json";
 import ImageSlider from "./ImageSlider";
-import print from "../public/img/print.png";
 import './css/home.css';
 import { Link } from 'react-router-dom';
 
@@ -32,9 +31,8 @@ function Home() {
             </header>
 
             <main>
-                    <ImageSlider className="carrossel" data={Velhos}/>
                 <div>
-                    <img  className="print" src={print}/>
+                    <ImageSlider className="carrossel" data={Velhos}/>
                 </div>
             </main>
 
