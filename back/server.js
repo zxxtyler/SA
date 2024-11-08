@@ -42,6 +42,9 @@ server.get('/velhos', async () => {
 server.put('/velhos/:id', async (request, reply) => {
     // uma constante pedindo o id parametro do livro
     const velhoID = request.params.id;
+    if (!velhoID) {
+        return reply.status(400).send('Nao inseriu o id do velho');
+    }
     const body = request.body;
     // as constantes sao chamadas e atualizadas com a função do update
     await databasePostgres.updateVelho(velhoID, body);
@@ -53,7 +56,7 @@ server.put('/velhos/:id', async (request, reply) => {
 // o comando delete vai deletar os dados do local inserido
 server.delete('/velhos/:id', async (request, reply) => {
     // params vai pegar o que vier depois da barra livros
-    const livroID = request.params.id;
+    const velhoID = request.params.id;
     // a informação é deletada de acordo com o id informado
     await databasePostgres.deleteVelho(velhoID);
 

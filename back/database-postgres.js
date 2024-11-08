@@ -2,16 +2,16 @@ import { randomUUID } from "crypto";
 import { sql } from './db.js';
 
 export class DatabasePostgres { 
-  async listLivros() {
-    const livros = await sql`select * from velhinhos`;
-    return livros;
+  async listVelhos() {
+    const velhos = await sql`select * from velhinhos`;
+    return velhos;
   }
 
   async createVelho(velho) {
     const id = randomUUID();
-    console.log('id', id);
     const nome = velho.nome;
-    const nascimento = velho.nascimento;
+    let nascimento = velho.nascimento;
+    nascimento = new Date(nascimento);
     const telefone = velho.telefone;
     const fotoperfil = velho.fotoperfil;
     const biografia = velho.biografia;
@@ -27,18 +27,18 @@ export class DatabasePostgres {
     const fotoperfil = velho.fotoperfil;
     const biografia = velho.biografia;
 
-    await sql`update velhos set 
+    await sql`update velhinhos set 
         nome = ${nome},
         nascimento = ${nascimento},
         telefone = ${telefone},
-        fotoperfil = ${fotoperfil}
-        biografia = ${biografia},
+        fotoperfil = ${fotoperfil},
+        biografia = ${biografia}
         where id = ${id}
     `;
   }
 
   async deleteVelho(id) {
-    await sql`delete from velhos where id = ${id}`
+    await sql`delete from velhinhos where id = ${id}`
   }
 
 }
