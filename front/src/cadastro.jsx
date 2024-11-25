@@ -24,22 +24,25 @@ function Cadastro() {
   
   return (
     <>
-      <header> 
-        <img className='logo' src={imagem1} alt="Logo"/>
-        <p><Link to="/">Home</Link></p>
+       <header> 
+        <img className='logo' src={imagem1}/>
+        <p className='home'><Link to="/">Home</Link></p>
         <a href="#">Como funciona?</a>
         <a href="#">Benefícios</a>
         <a href="#">Sobre nós</a>
-        <p className='separado'>Já tem uma conta? <Link to="/login">Clique aqui</Link></p>
+        <p className='separado'> Ainda não tem uma conta? <Link to="/cadastro">Clique aqui</Link></p>
       </header>
+
 
       <div className='container'>
         <img className='velho' src={imagem3} alt="Imagem de idoso"/> 
         <div className='login'>
-          <h1 className='cadastr'>Cadastro</h1>
+          <h1 className='cadastr'>Cadastro do idoso</h1>
+
+          <div className='inputscadastro'>
           <input className='inputmedio' type="text" placeholder='Nome de usuário' value={username} onChange={(e) => setUsername(e.target.value)} />
-          
-          <div className='doisinputs'>
+          <input className='inputmedio' type="password" placeholder='Senha' value={password} onChange={(e) => setPassword(e.target.value)} />
+        
             {/* Input para URL da imagem */}
             <input 
               className='inputmedio' 
@@ -50,18 +53,17 @@ function Cadastro() {
             />
             {/* Prévia da imagem */}
             {photoUrl && <img className='fotoperfil' src={photoUrl} alt="Prévia da foto" />}
-          </div>
 
-          <div className='coluna'>
-            <input className='inputpequeno' type="date" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} />
-            <input className='inputpequeno' type="text" placeholder='Telefone' value={phone} onChange={(e) => setPhone(e.target.value)} />
-            <input className='inputpequeno' type="password" placeholder='Senha' value={password} onChange={(e) => setPassword(e.target.value)} />
-          </div>
-          
-          <textarea className='inputmaior' placeholder='Biografia' value={bio} onChange={(e) => setBio(e.target.value)} />
-          <center>
+            <input className='inputmedio' type="date" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} />
+            <input className='inputmedio' type="text" placeholder='Telefone' value={phone} onChange={(e) => setPhone(e.target.value)} />
+            <textarea className='inputmaior' placeholder='Biografia' value={bio} onChange={(e) => setBio(e.target.value)} />
+
+            <center>
             <button className='logar' onClick={handleCadastro}>Cadastrar</button>
-          </center> 
+            </center> 
+          </div>
+         
+          
         </div>
       </div>
     </>

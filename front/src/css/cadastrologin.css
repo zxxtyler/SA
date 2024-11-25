@@ -23,7 +23,7 @@ p{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+
 }
 
 .login{
@@ -38,6 +38,7 @@ p{
 .velho{
   width: 41vw;
   margin-left: 5vw;
+  object-fit: contain;
 }
 
 input{
@@ -75,14 +76,12 @@ h1{
   width: 16vw;
 }
 
-.doisinputs{
-  display: flex;
-}
+
 
 .coluna{
   display: flex;
   flex-direction: column;
-  margin-left: 4vw;
+  
 }
 
 .inputmaior{
@@ -113,4 +112,23 @@ html{
 .error-message {
   color: red;
   font-size: 14px;
+}
+
+.inputscadastro{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.headercadastro{
+  display: flex;
+  flex-direction: row;
+}
+
+.cliqueaq{
+margin-left: 37vw;
+}
+
+.semcor{
+  color: black;
 }

@@ -39,7 +39,6 @@
 
 .bloco11{
   padding-left: 12vw;
-  padding-top: 8vh;
 }
 
 .velha{
@@ -65,4 +64,11 @@
 .bio{
   width: 65vw;
   height: 20vh;
+}
+
+.salvar-btn{
+  background-color: #1F9599;
+    color: aliceblue;
+    box-shadow: 5px 5px 5px  rgb(211, 211, 211);
+
 }

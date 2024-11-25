@@ -13,6 +13,7 @@ function Perfil() {
     needs: '',
     dateOfBirth: '',
     phone: '',
+    certificate: '', // Adicionado o campo do certificado
   });
 
   const [formData, setFormData] = useState({
@@ -21,6 +22,7 @@ function Perfil() {
     needs: '',
     dateOfBirth: '',
     phone: '',
+    certificate: '', // Adicionado o campo do certificado
   });
 
   useEffect(() => {
@@ -34,6 +36,7 @@ function Perfil() {
         needs: storedUserData.needs || '',
         dateOfBirth: storedUserData.dateOfBirth || '',
         phone: storedUserData.phone || '',
+        certificate: storedUserData.certificate || '', // Certificado carregado
       });
       setFormData({
         username: storedUserData.username || '',
@@ -41,6 +44,7 @@ function Perfil() {
         needs: storedUserData.needs || '',
         dateOfBirth: storedUserData.dateOfBirth || '',
         phone: storedUserData.phone || '',
+        certificate: storedUserData.certificate || '', // Certificado carregado
       });
     }
   }, []);
@@ -65,14 +69,26 @@ function Perfil() {
     <div className='tudo'>
       <div className='formulario'>
         <Link to="/meuperfil">
-          <img className='seta' src={seta} alt="Voltar"/>
+          <img className='seta' src={seta} alt="Voltar" />
         </Link>
         <div className='bloco11'>
           <h1 className='tituloedite'>Edite seu perfil</h1>
           <h2>{userData.username}</h2> {/* Exibe o nome do usuário */}
-          <img className='estrela' src={estrela} alt="Estrela"/><br/>
+          <img className='estrela' src={estrela} alt="Estrela" /><br />
 
           <div className='espaco'>
+
+          <label>Nome
+              <input
+                className='nome'
+                type="text"
+                name="username"
+                value={formData.username}
+                placeholder='Insira seu nome'
+                onChange={handleInputChange}
+              />
+            </label>
+            
             <label>Biografia
               <input
                 className='nome'
@@ -84,27 +100,7 @@ function Perfil() {
               />
             </label>
 
-            <label>Nome
-              <input
-                className='nome'
-                type="text"
-                name="username"
-                value={formData.username}
-                placeholder='Insira seu nome'
-                onChange={handleInputChange}
-              />
-            </label>
-
-            <label>Necessidade
-              <input
-                className='nome'
-                type="text"
-                name="needs"
-                value={formData.needs}
-                placeholder='Insira suas necessidades'
-                onChange={handleInputChange}
-              />
-            </label>
+          
 
             <label>Data de nascimento
               <input
@@ -126,6 +122,17 @@ function Perfil() {
                 onChange={handleInputChange}
               />
             </label>
+
+            <label>Certificado
+              <input
+                className='nome'
+                type="text"
+                name="certificate"
+                value={formData.certificate}
+                placeholder='Insira o certificado (URL ou descrição)'
+                onChange={handleInputChange}
+              />
+            </label><br />
           </div>
 
           <button className='salvar-btn' onClick={handleSave}>Salvar Alterações</button>
@@ -134,7 +141,7 @@ function Perfil() {
 
       <div className='imagemvelha'>
         {/* Exibe a foto do usuário */}
-        <img className='velha' src={userData.photoUrl} alt="Foto de Perfil"/>
+        <img className='velha' src={userData.photoUrl} alt="Foto de Perfil" />
       </div>
     </div>
   );

@@ -9,27 +9,42 @@ import fotoPadrao from '../public/icons/foto.svg'; // Imagem padrão
 import certificado from '../public/icons/certificado.svg';
 
 function Meuperfil() {
-  const [userData, setUserData] = useState({ username: '', photoUrl: fotoPadrao, dateOfBirth: '', phone: '', bio: '' });
+  const [userData, setUserData] = useState({
+    username: '',
+    photoUrl: fotoPadrao,
+    dateOfBirth: '',
+    phone: '',
+    bio: '',
+    certificate: '', // Adicionado o campo de certificado
+  });
 
   useEffect(() => {
     // Carregar os dados do usuário do localStorage
     const storedUserData = JSON.parse(localStorage.getItem('user'));
     if (storedUserData) {
-      setUserData({ 
+      setUserData({
         username: storedUserData.username || 'Usuário',
         photoUrl: storedUserData.photoUrl || fotoPadrao,
-        dateOfBirth: storedUserData.dateOfBirth || '',
+        dateOfBirth: storedUserData.dateOfBirth || '', // Certifique-se de carregar corretamente
         phone: storedUserData.phone || '',
-        bio: storedUserData.bio || ''
+        bio: storedUserData.bio || '',
+        certificate: storedUserData.certificate || '',
       });
     }
   }, []); // Executa apenas ao montar o componente
+
+  // Função para formatar a data no formato legível
+  const formatDate = (date) => {
+    if (!date) return 'Data não fornecida';
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(date).toLocaleDateString('pt-BR', options);
+  };
 
   return (
     <div className='tudo2'>
       <div className='nhe'>
         <Link to="/home">
-          <img src={seta2} alt="Voltar"/>
+          <img src={seta2} alt="Voltar" />
         </Link>
         <h1 className='textoperfil'>Perfil</h1>
       </div>
@@ -37,9 +52,9 @@ function Meuperfil() {
       <center>
         <div className='caixa'>
           {/* Exibe a foto do usuário */}
-          <img className='foto' src={userData.photoUrl} alt="Foto de Perfil"/>
+          <img className='foto' src={userData.photoUrl} alt="Foto de Perfil" />
           <p className='jertrudes'>{userData.username}</p>
-          <img src={estrela} alt="Estrela"/>
+          <img src={estrela} alt="Estrela" />
 
           <div className='divcolunasperfil'>
             <div className='div1'>
@@ -54,18 +69,18 @@ function Meuperfil() {
 
             <div className='div2'>
               <div className='divaniv'>
-                <img className='aniversario' src={aniversario} alt="Aniversário"/>
-                <p className='textobio2'>{userData.dateOfBirth}</p>
+                <img className='aniversario' src={aniversario} alt="Aniversário" />
+                <p className='textobio2'>{formatDate(userData.dateOfBirth)}</p>
               </div>
 
               <div className='divemail'>
-                <img className='email' src={email} alt="Telefone"/>
+                <img className='email' src={email} alt="Telefone" />
                 <p className='textobio2'>{userData.phone}</p>
               </div>
 
               <div className='divcertif'>
-                <img className='email' src={certificado} alt="Certificado"/>
-                <p className='textobio2'>Certificado</p>
+                <img className='email' src={certificado} alt="Certificado" />
+                <p className='textobio2'>{userData.certificate}</p>
               </div>
             </div>
           </div>
