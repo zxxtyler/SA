@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import imagem1 from '../public/img/logo.png';
 import imagem2 from '../public/img/idoso.png';
-import imagem3 from '../public/icons/google.svg';
-import './css/cadastrologin.css';
+import './css/login.css';
 
 function Login() {
   const [username, setUsername] = useState('');
+  const [password, setPassword] = useState(''); // Novo estado para senha
   const [error, setError] = useState(false);
   const navigate = useNavigate(); // Para redirecionar após login
 
   const handleLogin = () => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
-    if (storedUser && storedUser.username === username) {
-      // Usuário existe, redireciona para a home
+    if (storedUser && storedUser.username === username && storedUser.password === password) {
+      // Usuário e senha corretos, redireciona para a home
       navigate('/home');
     } else {
       // Mostra erro
@@ -35,22 +35,40 @@ function Login() {
       <div className='container'>
         <img className='velho' src={imagem2}/> 
         <div className='login'>
-          <h1>Login</h1>
-          <input 
-            type="text" 
-            placeholder='nome de usuário' 
-            value={username} 
-            onChange={(e) => setUsername(e.target.value)} 
-            className={error ? 'input-error' : ''}
-          />
-          {error && <p className='error-message'>Usuário não encontrado!</p>}
+          <h1>Login</h1><br/>
+
+          <div className='divlogin'>
+            <div>
+              <input 
+              type="text" 
+              placeholder='nome de usuário' 
+              value={username} 
+              onChange={(e) => setUsername(e.target.value)} 
+              className={error ? 'input-error' : ''}
+            />
+          </div>
+         
+          <div>
+            <input 
+                type="password" 
+                placeholder='senha' 
+                value={password} 
+                onChange={(e) => setPassword(e.target.value)} 
+                className={error ? 'input-error' : ''} // Input para senha
+              />
+          </div><br/>
+          
+          </div>
+        
+
+          {error && <p className='error-message'>Usuário ou senha incorretos!</p>}
           <center>
             <button className='logar' onClick={handleLogin}>Logar</button>
           </center> 
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default Login;

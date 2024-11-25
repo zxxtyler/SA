@@ -104,6 +104,10 @@
     top: -90px;
     right: 50%;
     transform: translateX(50%);
+    width: 160px;             
+    height: 160px;            
+    border-radius: 50%;       
+    object-fit: cover;        
 }
 
 .divcertif{

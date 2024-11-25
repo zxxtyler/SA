@@ -19,14 +19,14 @@ main{
     background-color: #FFF8F3;
 }
 
-.mematei{
+.divhome{
     position: absolute;
     right: 0;
     top: 0;
     padding-top: 6vh;
     width: 200px;
     display: flex;
-    gap: 3.5vh;
+    gap: 2vh;
    
 }
 
@@ -44,3 +44,12 @@ main{
 color: #268cac;
 font-weight: 700;
 }
+
+.perfilpequeno{
+    transform: translateX(50%);
+    width: 50px;             
+    height: 50px;            
+    border-radius: 50%;       
+    object-fit: cover;  
+}
+

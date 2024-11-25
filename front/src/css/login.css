@@ -21,3 +21,9 @@
     width: 7vh;
     padding-top: 3vh;
   }
+
+  .divlogin{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
