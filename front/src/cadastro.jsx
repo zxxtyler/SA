@@ -10,11 +10,11 @@ function Cadastro() {
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [bio, setBio] = useState('');
-  const [photoUrl, setPhotoUrl] = useState(''); // Novo estado para a URL da foto
+  const [photoUrl, setPhotoUrl] = useState(''); 
   const navigate = useNavigate();
 
   const handleCadastro = () => {
-    const userData = { username, dateOfBirth, phone, bio, password, photoUrl }; // Inclui a URL da foto
+    const userData = { username, dateOfBirth, phone, bio, password, photoUrl }; 
     localStorage.setItem('user', JSON.stringify(userData));
     navigate('/login');
   };
@@ -43,7 +43,7 @@ function Cadastro() {
           <input className='inputmedio' type="text" placeholder='Nome de usuário' value={username} onChange={(e) => setUsername(e.target.value)} />
           <input className='inputmedio' type="password" placeholder='Senha' value={password} onChange={(e) => setPassword(e.target.value)} />
         
-            {/* Input para URL da imagem */}
+            
             <input 
               className='inputmedio' 
               type="text" 
@@ -51,7 +51,7 @@ function Cadastro() {
               value={photoUrl} 
               onChange={(e) => setPhotoUrl(e.target.value)} 
             />
-            {/* Prévia da imagem */}
+            
             {photoUrl && <img className='fotoperfil' src={photoUrl} alt="Prévia da foto" />}
 
             <input className='inputmedio' type="date" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} />

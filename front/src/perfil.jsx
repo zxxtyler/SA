@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './css/perfil.css';
 import seta from '../public/icons/seta.svg';
 import estrela from '../public/icons/estrela.svg';
-import fotoPadrao from '../public/img/velhapadrao.png'; // Imagem padrão
+import fotoPadrao from '../public/img/velhapadrao.png'; 
 
 function Perfil() {
   const [userData, setUserData] = useState({
@@ -13,7 +13,7 @@ function Perfil() {
     needs: '',
     dateOfBirth: '',
     phone: '',
-    certificate: '', // Adicionado o campo do certificado
+    certificate: '', 
   });
 
   const [formData, setFormData] = useState({
@@ -22,11 +22,10 @@ function Perfil() {
     needs: '',
     dateOfBirth: '',
     phone: '',
-    certificate: '', // Adicionado o campo do certificado
+    certificate: '', 
   });
 
   useEffect(() => {
-    // Carregar dados do usuário do localStorage ao montar o componente
     const storedUserData = JSON.parse(localStorage.getItem('user'));
     if (storedUserData) {
       setUserData({
@@ -36,7 +35,7 @@ function Perfil() {
         needs: storedUserData.needs || '',
         dateOfBirth: storedUserData.dateOfBirth || '',
         phone: storedUserData.phone || '',
-        certificate: storedUserData.certificate || '', // Certificado carregado
+        certificate: storedUserData.certificate || '', 
       });
       setFormData({
         username: storedUserData.username || '',
@@ -44,7 +43,7 @@ function Perfil() {
         needs: storedUserData.needs || '',
         dateOfBirth: storedUserData.dateOfBirth || '',
         phone: storedUserData.phone || '',
-        certificate: storedUserData.certificate || '', // Certificado carregado
+        certificate: storedUserData.certificate || '', 
       });
     }
   }, []);
@@ -55,7 +54,7 @@ function Perfil() {
   };
 
   const handleSave = () => {
-    // Atualizar os dados no estado e salvar no localStorage
+    
     const updatedUserData = {
       ...userData,
       ...formData,
@@ -73,7 +72,7 @@ function Perfil() {
         </Link>
         <div className='bloco11'>
           <h1 className='tituloedite'>Edite seu perfil</h1>
-          <h2>{userData.username}</h2> {/* Exibe o nome do usuário */}
+          <h2>{userData.username}</h2> 
           <img className='estrela' src={estrela} alt="Estrela" /><br />
 
           <div className='espaco'>
@@ -140,7 +139,6 @@ function Perfil() {
       </div>
 
       <div className='imagemvelha'>
-        {/* Exibe a foto do usuário */}
         <img className='velha' src={userData.photoUrl} alt="Foto de Perfil" />
       </div>
     </div>

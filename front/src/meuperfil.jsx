@@ -5,7 +5,7 @@ import seta2 from '../public/icons/seta2.svg';
 import estrela from '../public/icons/estrela.svg';
 import aniversario from '../public/icons/aniversario.svg';
 import email from '../public/icons/email.svg';
-import fotoPadrao from '../public/icons/foto.svg'; // Imagem padrão
+import fotoPadrao from '../public/icons/foto.svg'; 
 import certificado from '../public/icons/certificado.svg';
 
 function Meuperfil() {
@@ -15,25 +15,24 @@ function Meuperfil() {
     dateOfBirth: '',
     phone: '',
     bio: '',
-    certificate: '', // Adicionado o campo de certificado
+    certificate: '', 
   });
 
   useEffect(() => {
-    // Carregar os dados do usuário do localStorage
     const storedUserData = JSON.parse(localStorage.getItem('user'));
     if (storedUserData) {
       setUserData({
         username: storedUserData.username || 'Usuário',
         photoUrl: storedUserData.photoUrl || fotoPadrao,
-        dateOfBirth: storedUserData.dateOfBirth || '', // Certifique-se de carregar corretamente
+        dateOfBirth: storedUserData.dateOfBirth || '', 
         phone: storedUserData.phone || '',
         bio: storedUserData.bio || '',
         certificate: storedUserData.certificate || '',
       });
     }
-  }, []); // Executa apenas ao montar o componente
+  }, []); 
 
-  // Função para formatar a data no formato legível
+ 
   const formatDate = (date) => {
     if (!date) return 'Data não fornecida';
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -51,7 +50,6 @@ function Meuperfil() {
 
       <center>
         <div className='caixa'>
-          {/* Exibe a foto do usuário */}
           <img className='foto' src={userData.photoUrl} alt="Foto de Perfil" />
           <p className='jertrudes'>{userData.username}</p>
           <img src={estrela} alt="Estrela" />

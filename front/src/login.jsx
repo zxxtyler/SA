@@ -6,17 +6,15 @@ import './css/login.css';
 
 function Login() {
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState(''); // Novo estado para senha
+  const [password, setPassword] = useState(''); 
   const [error, setError] = useState(false);
-  const navigate = useNavigate(); // Para redirecionar após login
+  const navigate = useNavigate(); 
 
   const handleLogin = () => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser && storedUser.username === username && storedUser.password === password) {
-      // Usuário e senha corretos, redireciona para a home
       navigate('/home');
     } else {
-      // Mostra erro
       setError(true);
     }
   };
@@ -54,7 +52,7 @@ function Login() {
                 placeholder='senha' 
                 value={password} 
                 onChange={(e) => setPassword(e.target.value)} 
-                className={error ? 'input-error' : ''} // Input para senha
+                className={error ? 'input-error' : ''} 
               />
           </div><br/>
           

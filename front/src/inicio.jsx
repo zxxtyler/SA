@@ -3,7 +3,6 @@ import { useState } from 'react';
 import imagem1 from '../public/img/logo.png';
 import './css/inicio.css';
 import idoso3 from '../public/img/velho3.png';
-// import idoso4 from '../public/img/velho3.png';
 import Login from './login';
 
 import { Link } from 'react-router-dom';
@@ -101,7 +100,7 @@ function inicio() {
          
       <p className='sobrenos'>Na CarefulPeople, dedicamo-nos a oferecer cuidados excepcionais para idosos com respeito e carinho. Desde ínicio de 2024, nossa equipe comprometida e qualificada trabalha para garantir um ambiente seguro e acolhedor, atendendo às necessidades individuais de cada pessoa.
           Nosso objetivo é melhorar a qualidade de vida dos nossos clientes, promovendo autonomia e felicidade através de serviços personalizados e atenção cuidadosa. Para nós, cada idoso é único e merece um cuidado que respeite sua dignidade.</p>
-          {/* <img className='idoso4' src={idoso4}/> */}
+        
           
       </center>
       </div>
@@ -116,9 +115,6 @@ function inicio() {
       </center>
       </div>
     </section>
-
-
-
 
     </>
   )
